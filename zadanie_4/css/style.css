@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+}
+.main_border{
+    width: 450px;
+    height: 450px;
+    background-color: red;
+    position: relative;
+    
+}
+
+.cube{
+    width: 150px;
+    height: 150px;
+    border: 1px  white solid;
+}
+
+.red{
+    background-color: red;
+    position: static;
+}
+.blue{
+    background-color: blue;
+    position: relative;
+    left: 150px;
+    bottom: 150px;
+}
+.green{
+    background-color: green;
+    position: relative;
+    left: 300px;
+    bottom: 300px;;
+}
+.yellow{
+    background-color: yellow;
+    position: relative;
+    bottom: 300px;
+}
+.black{
+    background-color: black;
+    position: relative;
+    bottom: 450px;
+    left: 150px;
+}
+.orange{
+    background-color: orange;
+    position: relative;
+    bottom: 600px;
+    left: 300px;
+}
+.purple{
+    background-color: purple;
+    position: relative;
+    bottom: 600px;
+}
+.gray{
+    background-color: gray;
+    position: relative;
+    bottom: 750px;
+    left:150px;
+}
+.pink{
+    background-color: pink;
+    position: relative;
+    bottom: 900px;
+    left: 300px;
+}
+
+.circle{
+    width: 75px;
+    height: 75px;
+    border: 1px solid black;
+    border-radius:50%;
+    
+}
+
+.first{
+    background-color: pink;
+    position: absolute;
+    left: 37.5px;
+    top: 37.5px;
+}
+.second{
+    background-color: gray;
+    position: absolute;
+    left: 37.5px;
+    top: 37.5px;
+}
+
+.third{
+    background-color: purple;
+    position: absolute;
+    left: 37.5px;
+    top: 37.5px;
+}
+.fourth{
+    background-color: green;
+    position: absolute;
+    left: 37.5px;
+    top: 37.5px;
+}
+.fifth{
+    background-color: red;
+    position: absolute;
+    left: 37.5px;
+    top: 37.5px;
+}
+.sixth{
+    background-color: blue;
+    position: absolute;
+    left: 37.5px;
+    top: 37.5px;
+}
+.seventh{
+    background-color: orange;
+    position: absolute;
+    left: 37.5px;
+    top: 37.5px;
+}
+.eighth{
+    background-color: yellow;
+    position: absolute;
+    left: 37.5px;
+    top: 37.5px;
+}
+.nineth{
+    background-color: black;
+    position: absolute;
+    left: 37.5px;
+    top: 37.5px;
+}

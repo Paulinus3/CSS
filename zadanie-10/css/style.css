@@ -13,29 +13,37 @@ h2{
 
 /* HEADER */
 
-.main-header .main-heder-content{
+.main-header{
+    margin:0;
     background-color: #c9c9c9;
     height: 350px;
-    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
-/* .main-header .main-heder-content .triangle{
-    width: 0;
-	height: 0;
-	border-top: 121px solid #2a6fc2;
-	border-right: 121px solid transparent;
-	margin: 25px auto 0;
-    
-    
-    
-} */
 
 .main-header .main-heder-content h1{
     color: #2a6fc2;
     font-size: 70px;
     text-align: center;
-    padding: 100px;
+    /* padding: 100px; */
+}
+
+.main-heder-content .triangle{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 350px 350px 0 0;
+    border-color: #2a6fc2 transparent transparent transparent;
+    transform: translateX(-50%);
+    position: absolute;
+    bottom: 100px;
+    left: 170px;
+   
+
 }
 
 /* NAWIGACJA */
@@ -49,15 +57,18 @@ h2{
     top: 0;
     left: 50%;
     z-index: 100;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+    margin:0;
+    
+
 }
 
 .main-menu ul .menu-item{
     display: inline;
-    float: right;
-    margin-right: 25px;
-    padding: 20px;
-   
-   
+    margin-right: 25px; 
 }
 
 .main-menu ul .menu-item a{
@@ -69,10 +80,17 @@ h2{
 
 /* sekcja o mnie */
 
+#about-me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .container-about{
-    
     background-color: #edce95;
     position: relative;
+    margin:0;
+    
 }
 
 
@@ -124,9 +142,17 @@ h2{
 .container-portfolio{
     background-color: white;
     height: 400px;
-
 }
 
+.container-portfolio .containre-for-circle{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between; 
+    justify-content: center;
+    
+
+}
 
 
 .container-portfolio .portfolio-circle{
@@ -134,16 +160,75 @@ h2{
     height: 200px;
     border-radius: 100%;
     background-color: #808080;
-    position: absolute;
-    display: flex;
-    flex-wrap: wrap;
-  
+    align-self:center;
+    position: relative;
+    margin-left: 40px;
+
 }
 
-
-
-
-
-.address{
+.container-portfolio .portfolio-circle .smalest-circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
     background-color: #2a6fc2;
+    position: absolute;
+    transform: translateX(-50%);
+    top:-10px;
+    left: 50%;
+}
+
+/* Kontakt */
+
+#contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.container-contact{
+    background-color: #edce95;
+    height: 350px;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    
+}
+
+.container-address{
+    background-color: #2a6fc2;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+    position: relative;
+    width: 40%;
+    margin:0;
+}
+.address{
+    color:white;
+    padding: 20px;
+    text-align: center;
+}
+
+.circle-contact1{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: #808080;
+    position: absolute;
+    left: 100%;
+    transform: translateX(-50%);
+    top:40%;
+}
+
+.circle-contact2{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: #808080;
+    position: absolute;
+    right: 90%;
+    transform: translateX(-50%);
+    bottom:40%;
 }
